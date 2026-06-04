@@ -1,0 +1,141 @@
+/* LoginPage.css */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f0f0f;
+  font-family: "Segoe UI", sans-serif;
+  padding: 1rem;
+}
+
+.login-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-header h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0 0 0.25rem;
+}
+
+.login-header p {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.login-toggle {
+  display: flex;
+  background: #111;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 1.5rem;
+  gap: 4px;
+}
+
+.login-toggle button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.login-toggle button.active {
+  background: #ff6b35;
+  color: #fff;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #ff6b35;
+}
+
+.error-box {
+  background: #2d1212;
+  border: 1px solid #5a2020;
+  color: #ff6b6b;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover { background: #e55a25; }
+.submit-btn:disabled { background: #444; cursor: not-allowed; }
+
+.firebase-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #111;
+  border: 1px solid #1e3a2f;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.firebase-note strong { color: #4ade80; display: block; margin-bottom: 0.5rem; }
+.firebase-note ul { margin: 0; padding-left: 1.2rem; }
+.firebase-note li { margin-bottom: 0.25rem; }
+.firebase-note code { color: #ff6b35; background: #1a1a1a; padding: 0 4px; border-radius: 3px; }
